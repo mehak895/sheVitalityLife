@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>sheVitalityLife</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+    }
+
+    /* Section animation */
+    .section {
+      display: none;
+      animation: fadeSlide 0.5s ease forwards;
+    }
+
+    @keyframes fadeSlide {
+      from {
+        opacity: 0;
+        transform: translateY(15px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* FAQ animation */
+    .faq {
+      overflow: hidden;
+      transition: max-height 0.4s ease;
+    }
+  </style>
+</head>
+
+<body class="bg-[#fff7fb] text-gray-800">
+
+<!-- NAVBAR -->
+<nav class="bg-white shadow-sm sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+    <!-- LOGO + NAME -->
+    <div class="flex items-center gap-3">
+      <img src="./Logo.jpeg" alt="sheVitalityLife logo" class="w-10 h-10 rounded-full">
+      <h1 class="text-2xl font-bold text-pink-600">sheVitalityLife</h1>
+    </div>
+
+    <!-- NAV -->
+    <div class="space-x-6 text-gray-600">
+      <button onclick="showSection('awareness')" class="hover:text-pink-600">🌸 Awareness</button>
+      <button onclick="showSection('tracker')" class="hover:text-pink-600">📅 Tracker</button>
+      <button onclick="showSection('chatbot')" class="hover:text-pink-600">💬 Chatbot</button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="max-w-7xl mx-auto px-6 py-20">
+  <h2 class="text-4xl md:text-5xl font-bold text-pink-700 mb-6">
+    A Gentle Space for PCOD & PCOS Awareness
+  </h2>
+  <p class="max-w-3xl text-gray-600 text-lg">
+    sheVitalityLife is designed to help women understand PCOD and PCOS in a calm,
+    stigma-free way — through awareness, self-tracking, and supportive guidance.
+  </p>
+</section>
+
+<!-- AWARENESS -->
+<section id="awareness" class="section bg-white py-20">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <h3 class="text-3xl font-bold text-pink-600 mb-8">
+      🌸 PCOD & PCOS Awareness
+    </h3>
+
+    <p class="text-gray-600 max-w-4xl mb-10">
+      Many women live with PCOD or PCOS without realizing it for years.
+      Symptoms are often normalized or ignored. sheVitalityLife exists to
+      provide clear, compassionate information so women can understand
+      their bodies without fear, shame, or confusion.
+    </p>
+
+    <!-- INFO GRID -->
+    <div class="grid md:grid-cols-2 gap-8 mb-16">
+
+      <div class="bg-[#fff7fb] p-6 rounded-xl">
+        <h4 class="font-semibold text-lg mb-2">🩺 What is PCOD?</h4>
+        <p class="text-gray-600">
+          Polycystic Ovarian Disease (PCOD) occurs when ovaries release immature
+          or partially mature eggs. These eggs may form cysts, leading to
+          hormonal imbalance, irregular periods, and weight gain. PCOD is
+          very common and often linked to lifestyle factors.
+        </p>
+      </div>
+
+      <div class="bg-[#fff7fb] p-6 rounded-xl">
+        <h4 class="font-semibold text-lg mb-2">🧬 What is PCOS?</h4>
+        <p class="text-gray-600">
+          Polycystic Ovary Syndrome (PCOS) is a hormonal and metabolic disorder
+          where excess androgens affect ovulation. It can impact fertility,
+          skin, hair, emotional health, and long-term metabolic health.
+        </p>
+      </div>
+
+      <div class="bg-[#fff7fb] p-6 rounded-xl">
+        <h4 class="font-semibold text-lg mb-2">⚠️ Common Symptoms</h4>
+        <ul class="list-disc list-inside text-gray-600">
+          <li>Irregular or missed periods</li>
+          <li>Weight gain or difficulty losing weight</li>
+          <li>Acne, oily skin, or excess facial hair</li>
+          <li>Hair thinning or hair fall</li>
+          <li>Fatigue, anxiety, or mood swings</li>
+        </ul>
+      </div>
+
+      <div class="bg-[#fff7fb] p-6 rounded-xl">
+        <h4 class="font-semibold text-lg mb-2">🧠 Possible Causes</h4>
+        <p class="text-gray-600">
+          Genetics, insulin resistance, hormonal imbalance, chronic stress,
+          lack of physical activity, and unhealthy eating habits may all
+          contribute to PCOD and PCOS.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- LIFESTYLE -->
+    <div class="bg-[#fff7fb] p-8 rounded-xl mb-16">
+      <h4 class="font-semibold text-xl mb-3">🌿 Management & Lifestyle Support</h4>
+      <p class="text-gray-600 mb-3">
+        While PCOD and PCOS do not have a permanent cure, symptoms can be
+        effectively managed through:
+      </p>
+      <ul class="list-disc list-inside text-gray-600">
+        <li>Balanced diet with reduced sugar intake</li>
+        <li>Regular exercise and physical activity</li>
+        <li>Stress management and quality sleep</li>
+        <li>Medical consultation when symptoms persist</li>
+      </ul>
+    </div>
+<!-- CURE CLARITY -->
+<div class="bg-[#fff7fb] p-8 rounded-xl mb-16">
+  <h4 class="font-semibold text-xl mb-4">💡 Is PCOD / PCOS Curable?</h4>
+  <p class="text-gray-600 mb-3">
+    PCOD and PCOS do not have a permanent “one-time cure.” However, this does
+    not mean they cannot be managed. With the right lifestyle choices and
+    medical guidance, many women experience regular cycles, reduced symptoms,
+    and improved overall health.
+  </p>
+  <p class="text-gray-600">
+    The goal of management is not perfection, but balance — supporting hormonal
+    health over time rather than seeking quick fixes.
+  </p>
+</div>
+
+<!-- STRESS -->
+<div class="bg-[#fff7fb] p-8 rounded-xl mb-16">
+  <h4 class="font-semibold text-xl mb-4">🧠 Stress & Mental Well-Being</h4>
+  <p class="text-gray-600 mb-3">
+    Stress plays a significant role in hormonal imbalance. Chronic stress can
+    worsen symptoms such as irregular periods, fatigue, acne, and mood changes.
+  </p>
+  <p class="text-gray-600 mb-3">
+    Practices such as mindful breathing, adequate sleep, light physical
+    activity, and emotional support can positively impact hormonal balance.
+  </p>
+  <p class="text-gray-600">
+    Mental well-being is not optional — it is an essential part of managing
+    PCOD and PCOS.
+  </p>
+</div>
+
+<!-- DO & DON'T -->
+<div class="grid md:grid-cols-2 gap-8 mb-16">
+
+  <div class="bg-[#fff7fb] p-6 rounded-xl">
+    <h4 class="font-semibold text-lg mb-3">✅ Helpful Habits</h4>
+    <ul class="list-disc list-inside text-gray-600">
+      <li>Maintain a consistent sleep schedule</li>
+      <li>Engage in regular physical activity</li>
+      <li>Eat balanced, home-cooked meals when possible</li>
+      <li>Track menstrual cycles for early awareness</li>
+      <li>Seek medical advice when symptoms persist</li>
+    </ul>
+  </div>
+
+  <div class="bg-[#fff7fb] p-6 rounded-xl">
+    <h4 class="font-semibold text-lg mb-3">❌ What to Avoid</h4>
+    <ul class="list-disc list-inside text-gray-600">
+      <li>Ignoring irregular periods for long durations</li>
+      <li>Crash dieting or extreme food restrictions</li>
+      <li>Over-reliance on social media health advice</li>
+      <li>Excessive sugar and processed food intake</li>
+      <li>Self-medication without guidance</li>
+    </ul>
+  </div>
+
+</div>
+
+<!-- EATING HABITS -->
+<div class="bg-[#fff7fb] p-8 rounded-xl mb-16">
+  <h4 class="font-semibold text-xl mb-4">🥗 Eating Habits & Nutrition</h4>
+  <p class="text-gray-600 mb-3">
+    There is no single “PCOS diet.” Nutrition should be sustainable and suited
+    to individual needs. A balanced approach supports long-term hormonal health.
+  </p>
+
+  <ul class="list-disc list-inside text-gray-600 mb-3">
+    <li>Prefer whole grains, fruits, vegetables, and proteins</li>
+    <li>Limit refined sugars and highly processed foods</li>
+    <li>Stay hydrated throughout the day</li>
+    <li>Avoid skipping meals frequently</li>
+  </ul>
+
+  <p class="text-gray-600">
+    Small, consistent improvements in eating habits are more effective than
+    strict short-term diets.
+  </p>
+</div>
+
+    <!-- FAQ -->
+    <h4 class="text-2xl font-bold text-pink-600 mb-6">❓ Frequently Asked Questions</h4>
+
+    <div class="space-y-4">
+
+      <div class="border rounded-lg">
+        <button onclick="toggleFAQ(1)" class="w-full text-left p-4 font-medium">
+          Is PCOD/PCOS very common?
+        </button>
+        <div id="faq1" class="faq max-h-0 px-4 pb-4 text-gray-600">
+          Yes. PCOD and PCOS affect a significant number of women, especially
+          in their reproductive years. Many remain undiagnosed due to lack
+          of awareness.
+        </div>
+      </div>
+
+      <div class="border rounded-lg">
+        <button onclick="toggleFAQ(2)" class="w-full text-left p-4 font-medium">
+          Can PCOD or PCOS be cured?
+        </button>
+        <div id="faq2" class="faq max-h-0 px-4 pb-4 text-gray-600">
+          There is no permanent cure, but symptoms can be managed effectively
+          through lifestyle changes and medical guidance.
+        </div>
+      </div>
+
+      <div class="border rounded-lg">
+        <button onclick="toggleFAQ(3)" class="w-full text-left p-4 font-medium">
+          Can I get pregnant if I have PCOS?
+        </button>
+        <div id="faq3" class="faq max-h-0 px-4 pb-4 text-gray-600">
+          Many women with PCOS conceive naturally or with treatment. Early
+          diagnosis and medical support greatly improve fertility outcomes.
+        </div>
+      </div>
+
+      <div class="border rounded-lg">
+        <button onclick="toggleFAQ(4)" class="w-full text-left p-4 font-medium">
+          Does PCOS always cause weight gain?
+        </button>
+        <div id="faq4" class="faq max-h-0 px-4 pb-4 text-gray-600">
+          Not always, but insulin resistance can make weight management
+          more difficult for some women.
+        </div>
+      </div>
+
+      <div class="border rounded-lg">
+        <button onclick="toggleFAQ(5)" class="w-full text-left p-4 font-medium">
+          When should I consult a doctor?
+        </button>
+        <div id="faq5" class="faq max-h-0 px-4 pb-4 text-gray-600">
+          If you experience persistent irregular periods, excessive hair
+          growth, sudden weight changes, or difficulty conceiving, consult
+          a healthcare professional.
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+    
+
+<!-- TRACKER -->
+<section id="tracker" class="section py-20">
+  <div class="max-w-xl mx-auto bg-white p-8 rounded-2xl shadow-md">
+    <h3 class="text-2xl font-bold text-pink-600 mb-6">📅 Menstrual Cycle Tracker</h3>
+
+    <input type="date" id="lastPeriod" class="w-full border rounded p-2 mb-4">
+    <input type="number" id="cycleLength" placeholder="Cycle length (28)"
+      class="w-full border rounded p-2 mb-4">
+
+    <button onclick="trackCycle()"
+      class="bg-pink-600 text-white px-6 py-2 rounded-full">
+      Get Insight
+    </button>
+
+    <p id="cycleResult" class="mt-4 text-gray-700"></p>
+  </div>
+</section>
+
+<!-- CHATBOT -->
+<section id="chatbot" class="section bg-white py-20">
+  <div class="max-w-xl mx-auto p-8 rounded-2xl shadow-md">
+    <h3 class="text-2xl font-bold text-pink-600 mb-4">💬 Ask About PCOD & PCOS</h3>
+
+    <input id="userMsg"
+      placeholder="Ask your question..."
+      class="w-full border rounded p-2 mb-3">
+
+    <button onclick="sendMessage()"
+      class="bg-pink-600 text-white px-6 py-2 rounded-full">
+      Ask
+    </button>
+
+    <p id="botReply" class="mt-4 text-gray-700"></p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center py-6 text-sm text-gray-500">
+  Disclaimer: This platform is for awareness only and not a substitute for medical advice.
+</footer>
+
+<script>
+function showSection(id) {
+  document.querySelectorAll('.section').forEach(s => s.style.display = 'none');
+  document.getElementById(id).style.display = 'block';
+}
+
+function toggleFAQ(num) {
+  const el = document.getElementById('faq' + num);
+  if (el.style.maxHeight && el.style.maxHeight !== "0px") {
+    el.style.maxHeight = "0px";
+  } else {
+    el.style.maxHeight = el.scrollHeight + "px";
+  }
+}
+
+function trackCycle() {
+  const last = document.getElementById("lastPeriod").value;
+  const cycle = parseInt(document.getElementById("cycleLength").value);
+  if (!last || !cycle) return;
+
+  const next = new Date(last);
+  next.setDate(next.getDate() + cycle);
+  document.getElementById("cycleResult").innerText =
+    "Estimated next period: " + next.toDateString();
+}
+async function sendMessage() {
+  const msg = document.getElementById("userMsg").value.trim();
+  if (!msg) return;
+
+  // optional UX feedback
+  document.getElementById("botReply").innerText = "Thinking...";
+
+  try {
+    const response = await fetch("http://127.0.0.1:5000/chat", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ message: msg })
+    });
+
+    const data = await response.json();
+    document.getElementById("botReply").innerText = data.reply;
+
+  } catch (error) {
+    document.getElementById("botReply").innerText =
+      "Unable to connect to the server. Please try again.";
+  }
+}
+
+showSection('awareness');
+</script>
+
+</body>
+</html>
